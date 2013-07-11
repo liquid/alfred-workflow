@@ -5,7 +5,6 @@ module Alfred
     end
   end
 
-  class ObjCError           < AlfredError; status_code(1) ; end
   class NoBundleIDError     < AlfredError; status_code(2) ; end
   class InvalidFormat       < AlfredError; status_code(11) ; end
   class NoMethodError       < AlfredError; status_code(13) ; end
