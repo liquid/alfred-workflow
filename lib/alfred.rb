@@ -8,6 +8,7 @@ require 'alfred/core'
 require 'alfred/ui'
 require 'alfred/errors'
 require 'alfred/feedback'
+require 'alfred/cached_feedback'
 require 'alfred/setting'
 
 module Alfred
