@@ -9,7 +9,6 @@ require 'alfred/ui'
 require 'alfred/errors'
 require 'alfred/feedback'
 require 'alfred/cached_feedback'
-require 'alfred/setting'
 
 module Alfred
   class << self
@@ -44,7 +43,6 @@ module Alfred
         exit(-1)
       end
     end
-
 
     # launch alfred with query
     def search(query = "")
