@@ -31,4 +31,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'terminal-notifier-guard'
   spec.add_development_dependency 'growl'
   spec.add_development_dependency 'pry'
+  spec.add_development_dependency 'nokogiri'
 end

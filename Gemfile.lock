@@ -31,6 +31,7 @@ GEM
       rb-kqueue (>= 0.2)
     lumberjack (1.0.3)
     method_source (0.8.1)
+    nokogiri (1.5.6)
     plist (3.1.0)
     pry (0.9.12.1)
       coderay (~> 1.0.5)
@@ -65,6 +66,7 @@ DEPENDENCIES
   guard (~> 1.7.0)
   guard-bundler
   guard-rspec
+  nokogiri
   pry
   rake
   rspec (>= 2.13)
