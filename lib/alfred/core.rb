@@ -8,11 +8,6 @@ module Alfred
       instance_eval(&blk) if block_given?
     end
 
-    def ui
-      raise NoBundleIDError unless bundle_id
-      @ui ||= LogUI.new(bundle_id)
-    end
-
     def setting(&blk)
       @setting ||= Setting.new(self, &blk)
     end
