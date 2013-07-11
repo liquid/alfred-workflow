@@ -25,9 +25,8 @@ module Alfred
       @info_plist ||= Plist::parse_xml('info.plist')
     end
 
-    # Returns nil if not set.
     def bundle_id
-      @bundle_id ||= info_plist['bundleid'] unless info_plist['bundleid'].empty?
+      @bundle_id ||= 'TODO'
     end
 
     def volatile_storage_path
