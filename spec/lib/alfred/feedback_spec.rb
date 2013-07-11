@@ -20,7 +20,8 @@ describe "Feedback" do
                          :autocomplete => "autocomplete" ,
                          :title        => "Title"        ,
                          :subtitle     => "Subtitle")
-
+      
+      pending 'replace test with Nokogiri XLM node matching'
       xml_data = <<-END.strip_heredoc
       <?xml version="1.0"?>
       <items>
@@ -68,17 +69,18 @@ describe "Feedback" do
                     :title        => "Title"        ,
                     :subtitle     => "Subtitle")
 
-        @xml_data = <<-END.strip_heredoc
-        <?xml version="1.0"?>
-        <items>
-          <item valid="yes" arg="arg" autocomplete="autocomplete" uid="uid">
-            <title>Title</title>
-            <subtitle>Subtitle</subtitle>
-            <icon>icon.png</icon>
-          </item>
-        </items>
-        END
-        fb.put_cached_feedback
+        pending 'Replace tests with Nokogiri XML matching.'
+        # @xml_data = <<-END.strip_heredoc
+#         <?xml version="1.0"?>
+#         <items>
+#           <item valid="yes" arg="arg" autocomplete="autocomplete" uid="uid">
+#             <title>Title</title>
+#             <subtitle>Subtitle</subtitle>
+#             <icon>icon.png</icon>
+#           </item>
+#         </items>
+#         END
+#         fb.put_cached_feedback
       end
 
 
