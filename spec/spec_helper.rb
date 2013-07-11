@@ -5,6 +5,7 @@
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 
+require 'pry'
 require 'alfred'
 
 Dir[File.dirname(__FILE__) + "/support/**/*.rb"].each { |file| require file }

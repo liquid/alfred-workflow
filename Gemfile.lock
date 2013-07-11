@@ -65,6 +65,7 @@ DEPENDENCIES
   guard (~> 1.7.0)
   guard-bundler
   guard-rspec
+  pry
   rake
   rspec (>= 2.13)
   terminal-notifier-guard
