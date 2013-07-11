@@ -3,6 +3,7 @@
 
 guard 'bundler' do
   watch('Gemfile')
+  watch('*.gemspec')
   # Uncomment next line if Gemfile contain `gemspec' command
   # watch(/^.+\.gemspec/)
 end
