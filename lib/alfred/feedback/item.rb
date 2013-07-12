@@ -5,43 +5,15 @@ module Alfred
     class Item
       attr_accessor :uid, :arg, :valid, :autocomplete, :title, :subtitle, :icon, :type
 
-      def initialize(title, opts = {})
+      def initialize(title, options = {})
         @title    = title
-        @subtitle = opts[:subtitle] if opts[:subtitle]
-
-        if opts[:icon]
-          @icon    = opts[:icon]
-        else
-          @icon    = {:type => "default", :name => "icon.png"}
-        end
-
-        if opts[:uid]
-          @uid    = opts[:uid]
-        else
-          @uid    = ''
-        end
-
-        if opts[:arg]
-          @arg    = opts[:arg]
-        else
-          @arg    = @title
-        end
-
-        if opts[:type]
-          @type    = opts[:type]
-        else
-          @type    = 'default'
-        end
-
-        if opts[:valid]
-          @valid    = opts[:valid]
-        else
-          @valid    = 'yes'
-        end
-
-        if opts[:autocomplete]
-          @autocomplete    = opts[:autocomplete]
-        end
+        @subtitle = options[:subtitle] if options[:subtitle]
+        @icon     = options[:icon] || {:type => "default", :name => "icon.png"}
+        @uid      = options[:uid] || ''
+        @arg      = options[:arg] || @title
+        @type     = options[:type] || 'default'
+        @valid    = options[:valid] || 'yes'
+        @autocomplete = options[:autocomplete] if options[:autocomplete]
       end
 
       ## To customize a new match? function, overwrite it.
